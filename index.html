@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Drink?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>W<span class="highlight">H</span>AT STARB<span class="highlight">U</span>CKS DR<span class="highlight">I</span>NK A<span class="highlight">R</span>E Y<span class="highlight">O</span>U?</h1>
+    <h2>find out what your vibe is! try this drink next time you go to starbucks!</h2>
+    <form id="quizForm">
+        <div class="question">
+            <h3>when do you want coffee the most?</h3>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="coldbrew">morning time!</label><br>
+                <label><input type="radio" name="q1" value="psl">mid-morning!</label><br>
+                <label><input type="radio" name="q1" value="matcha">afternoon time!</label><br>
+                <label><input type="radio" name="q1" value="macc">late afternoon!</label><br>
+                <label><input type="radio" name="q1" value="refresher">any time!</label><br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>weekend activity?</h3>
+            <div class="answers">
+                <label><input type="radio" name="q2" value="coldbrew">hiking or yoga!</label><br>
+                <label><input type="radio" name="q2" value="psl">baking cookies!</label><br>
+                <label><input type="radio" name="q2" value="matcha">painting or journaling!</label><br>
+                <label><input type="radio" name="q2" value="macc">going to a party!</label><br>
+                <label><input type="radio" name="q2" value="refresher">going to a festival!</label><br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>outfit vibes?</h3>
+            <div class="answers">
+                <label><input type="radio" name="q3" value="coldbrew">chill streetwear!</label><br>
+                <label><input type="radio" name="q3" value="psl">cozy sweater & boots!</label><br>
+                <label><input type="radio" name="q3" value="matcha">flowy with gold jewelry!</label><br>
+                <label><input type="radio" name="q3" value="macc">bold colors!</label><br>
+                <label><input type="radio" name="q3" value="refresher">sporty, very athletic!</label><br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>ideal vacation?</h3>
+            <div class="answers">
+                <label><input type="radio" name="q4" value="coldbrew">national park adventure!</label><br>
+                <label><input type="radio" name="q4" value="psl">sightseeing tours of historic sites!</label><br>
+                <label><input type="radio" name="q4" value="matcha">peaceful retreat!</label><br>
+                <label><input type="radio" name="q4" value="macc">big city exploration!</label><br>
+                <label><input type="radio" name="q4" value="refresher">beach resort!</label><br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>your friends would describe you as...</h3>
+            <div class="answers">
+                <label><input type="radio" name="q5" value="coldbrew">chill & wise!</label><br>
+                <label><input type="radio" name="q5" value="psl">warm, cozy, & kind!</label><br>
+                <label><input type="radio" name="q5" value="matcha">thoughtful & informative!</label><br>
+                <label><input type="radio" name="q5" value="macc">wild, bold, & fun!</label><br>
+                <label><input type="radio" name="q5" value="refresher">energetic & spontaneous!</label><br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>music vibe?</h3>
+            <div class="answers">
+                <label><input type="radio" name="q6" value="coldbrew">chill edm!</label><br>
+                <label><input type="radio" name="q6" value="psl">folk!</label><br>
+                <label><input type="radio" name="q6" value="matcha">lo-fi is me!</label><br>
+                <label><input type="radio" name="q6" value="macc">r&b!</label><br>
+                <label><input type="radio" name="q6" value="refresher">pop hits!</label><br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>what's your solution to stress?</h3>
+            <div class="answers">
+                <label><input type="radio" name="q7" value="coldbrew">go for a run!</label><br>
+                <label><input type="radio" name="q7" value="psl">curl up into a cozy blanket & movie!</label><br>
+                <label><input type="radio" name="q7" value="matcha">be creative & expressive!</label><br>
+                <label><input type="radio" name="q7" value="macc">get a sweet treat!</label><br>
+                <label><input type="radio" name="q7" value="refresher">hang out with friends!</label><br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>your study vibe?</h3>
+            <div class="answers">
+                <label><input type="radio" name="q8" value="coldbrew">chill playlist on speaker, cold drink w straw, organized tabs!</label><br>
+                <label><input type="radio" name="q8" value="psl">soft blanket, armchair, candles for lighting!</label><br>
+                <label><input type="radio" name="q8" value="matcha">coffee shop, yellow lighting, music in airpods!</label><br>
+                <label><input type="radio" name="q8" value="macc">standing desk, loud music blasting, hyped learning!</label><br>
+                <label><input type="radio" name="q8" value="refresher">study group, yapping+typing, sweet treat for motivation!</label><br>
+            </div>
+        </div>
+        <button type="button" onclick="calculateResult()">submit!</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
