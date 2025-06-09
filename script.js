@@ -26,3 +26,7 @@ function calculateResult() {
   document.getElementById('result').style.display = 'block';
   document.getElementById('result').innerText = resultText[topDrink];
 }
+
+const cursor = document.createElement('div');
+cursor.classList.add('custom-cursor');
+document.body.appendChild(cursor);
