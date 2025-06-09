@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
     padding: 10px;
     background-color: #223843;
-    cursor: url(assets/coffee.png), 16 16 auto;
+    cursor: url(assets/coffee.png) 16 16, auto;
 }
 
 h1{
