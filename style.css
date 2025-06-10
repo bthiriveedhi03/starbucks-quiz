@@ -2,7 +2,6 @@ body{
     font-family: 'Playfair Display', sans-serif;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 10px;
     background-color: #223843;
     cursor: url(assets/coffee.png) 16 16, auto;
 }
@@ -32,6 +31,30 @@ h2{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.drinks{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color:#F4FAFF;
+    font-family: 'Playfair Display';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 150px;
+    text-align: center;
 }
 
 .highlight{
@@ -80,14 +103,16 @@ h2{
 }
 
 button{
+    width: 150px;
+    height: auto;
     display: flex;
     margin: 0 auto;
+    justify-content: center;
     border-color: transparent;
     border-radius: 5px;
     margin-top: 40px;
     background-color: #F4FAFF;
     color: #F49097;
-    text-align: center;
     font-family: "Playfair Display";
     font-size: 18px;
     text-transform: uppercase;
@@ -98,22 +123,56 @@ button:hover{
     background-color: #F4C5CB;
 }
 
-#result{
-    background-color: #DA858D;
-    width: 300px;
+.custom-cursor{
+    pointer-events: none;
+}
+
+.startbutton{
+    width: 150px;
     height: auto;
     display: flex;
     margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 40px;
-    padding: 30px;
-    border-radius: 10px;
+    justify-content: center;
+    border-color: transparent;
+    border-radius: 5px;
+    margin-top: 40px;
+    background-color: #F4FAFF;
+    color: #F49097;
+    font-family: "Playfair Display";
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.startbutton:hover{
+    background-color: #F4C5CB;
+}
+
+.image-button {
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.image-button:hover {
+    transform: scale(1.1);
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#resultText{
+    padding-top: 30px;
+    display: flex;
+    margin: 0 auto;
+    color: #F4FAFF;
+    font-family: "Playfair Display";
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
-    color: #F4FAFF;
-}
-
-.custom-cursor{
-    pointer-events: none;
 }
